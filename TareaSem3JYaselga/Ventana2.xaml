@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TareaSem3JYaselga.Ventana2">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3" Padding="2" CornerRadius="0">
+                <Label Text="Sistema Seguimiento" HorizontalTextAlignment="Center" TextColor="White" FontSize="1"/>
+            </Frame>
+
+            <Label Text="Ingrese Nota de seguimiento 1"/>
+            <Entry x:Name="txtDato1"
+            Keyboard="Numeric">
+            </Entry>
+
+            <Label Text="Ingrese Nota Exámen 1"/>
+            <Entry x:Name="txtDato2"
+               Keyboard="Numeric" />
+
+            <Label Text="Ingrese Nota de seguimiento 2"/>
+            <Entry x:Name="txtDato3"
+            Keyboard="Numeric">
+            </Entry>
+
+            <Label Text="Ingrese Nota de Exámen 2"/>
+            <Entry x:Name="txtDato4"
+               Keyboard="Numeric" />
+
+            <Button x:Name="btnSumar"
+                Text="Calcular Parciales y Estado"
+                      Clicked="btnSumar_Clicked"/>
+
+
+            <Label Text ="Nota Parcial 1"/>
+            <Entry x:Name="txtResultado1"
+               IsReadOnly="True"/>
+
+            <Label Text="Nota Parcial 2"/>
+            <Entry x:Name="txtResultado3"
+               IsReadOnly="True"/>
+
+            <Label Text="Nota FInal"/>
+            <Entry x:Name="txtNfinal"
+               IsReadOnly="True"/>
+
+
+            <Label Text="Estado"/>
+            <Entry x:Name="txtEstado"
+               IsReadOnly="True"
+                   
+             />
+                
+                
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
